@@ -1,0 +1,28 @@
+table 'Key Measures'
+	lineageTag: c1830b2b-9ea6-4af2-86c0-d09c83f09859
+
+	measure Sales = ```
+			SUM(Orders[Sales]) 
+			```
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 55e48059-054c-45d1-ade7-5ac5575f3887
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure Profit = SUM( Orders[Profit] )
+		lineageTag: bcec3b8b-88b8-40a7-8408-582ab1bfd89a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Key Measures' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

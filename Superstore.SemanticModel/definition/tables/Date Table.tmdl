@@ -1,0 +1,57 @@
+table 'Date Table'
+	lineageTag: 184dc229-c6bc-4e6f-a342-d4fec9b296f9
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: dd-mmm-yy
+		lineageTag: ecf0a335-76f5-4a93-abdd-72c90db20cd4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Start of Month'
+		formatString: mmmm yyyy
+		lineageTag: 2f8b12ae-bfff-45ce-a334-fd4b669af319
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Start of Month]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Month = FORMAT('Date Table'[Date], "MMM")
+		dataType: string
+		lineageTag: 4b1e889d-3519-495c-aa63-78b2579f462d
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('Date Table'[Date])
+		formatString: 0
+		lineageTag: 8e75a4a9-078d-41a7-91ca-b8b9eb56367f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo = MONTH('Date Table'[Date])
+		formatString: 0
+		lineageTag: a9ce28a3-cef0-43db-8854-34f7b2c57729
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Date Table' = calculated
+		mode: import
+		source = ADDCOLUMNS(CALENDAR( MIN( Orders[Order Date] ),MAX( Orders[Order Date] ) ),"Start of Month", EOMONTH([Date],-1) +1)
+
+	annotation PBI_Id = feeb3b98be364511bfb1bf1c7d415847
+
