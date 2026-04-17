@@ -9,7 +9,7 @@ The dashboard includes visualisations highlighting:
      3. Total Quantity of Goods Sold
 
  - Line charts depicting trend of Sales Over Time
- - Bar Chart (Orange Color): Sum of Profit showing Product Category and Product Sub-Category.
-   Key Insights:
-      - Copiers product sub-category is the most profitable cateogry with over 50K Total Profit during the period from 2014-  2017.
+ - Bar Chart (Orange Colour): Sum of Profit showing Product Category and Product Sub-Category.
+ - Bar Chart (Blue Colour): Sum of Profit by State.
+ - Donut Chart: Sum of Sales by Business Segement.
     
