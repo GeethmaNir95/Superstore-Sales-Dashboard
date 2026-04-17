@@ -20,9 +20,9 @@ The dataset used in this project is a publicly available dataset  in Kaggle.
 Download link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
 ## Tools & Technologies
- -Power BI
+ - Power BI
  
- -DAX, Data Modelling
+ - DAX, Data Modelling
 
 ## Key Insights
  - Copiers is the most profitable product category.
