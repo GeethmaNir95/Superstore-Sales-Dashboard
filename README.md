@@ -15,11 +15,13 @@ The dashboard includes visualisations highlighting:
  - Date/Time slicer for filtering visuls within a selected time range.
    
 ## Dataset
-The dataset used in this project is a publicly available dataset called in Kaggle.
+The dataset used in this project is a publicly available dataset  in Kaggle.
 
 Download link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
 ## Tools & Technologies
+ -Power BI
+ -DAX, Data Modelling
 
 ## Key Insights
 
