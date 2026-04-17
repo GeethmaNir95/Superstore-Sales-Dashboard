@@ -13,8 +13,13 @@ The dashboard includes visualisations highlighting:
  - Bar Chart (Blue Colour): Sum of Profit by State.
  - Donut Chart: Sum of Sales by Business Segement.
  - Date/Time slicer for filtering visuls within a selected time range.
+   
+## Dataset
 
-## Key Measures
+## Tools & Technologies
+
+## Key Insights
+
 
 ## Dashboard
 
