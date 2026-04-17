@@ -12,4 +12,10 @@ The dashboard includes visualisations highlighting:
  - Bar Chart (Orange Colour): Sum of Profit showing Product Category and Product Sub-Category.
  - Bar Chart (Blue Colour): Sum of Profit by State.
  - Donut Chart: Sum of Sales by Business Segement.
+
+## Dashboard
+
+<img width="1438" height="811" alt="Screenshot 2026-04-17 123930" src="https://github.com/user-attachments/assets/6ab0fcb1-bb00-4ba7-aa8e-581f0d2175ee" />
+
+
     
