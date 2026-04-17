@@ -8,7 +8,7 @@ The dashboard includes visualisations highlighting:
      2. Profit Percentage (%) Across All Time
      3. Total Quantity of Goods Sold
 
- - Line charts depicting trend of Sales Over Time
+ - Time series analysis depicting trend of Sales Over Time
  - Bar Chart (Orange Colour): Sum of Profit showing Product Category and Product Sub-Category.
  - Bar Chart (Blue Colour): Sum of Profit by State.
  - Donut Chart: Sum of Sales by Business Segement.
