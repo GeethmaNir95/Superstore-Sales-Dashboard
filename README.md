@@ -15,7 +15,7 @@ The dashboard includes visualisations highlighting:
  - Date/Time slicer for filtering visuls within a selected time range.
    
 ## Dataset
-The dataset used in this project is a publicly available dataset called 'SuperStore Dataset' available in Kaggle.
+The dataset used in this project is a publicly available dataset called in Kaggle.<>
 Download link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
 print("Path to dataset files:", path)
