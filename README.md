@@ -28,7 +28,7 @@ Download link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
  - Copiers is the most profitable product category.
  - Tables are the least profitable product category.
  - Home Office Product Category has the highest percentage profit (%) with 14.05%
- - California 
+ - California is the most profitable state while Texas is the least profitable state.
  
   
 
